@@ -46,9 +46,9 @@ void Draw_Scene()
 			glVertex3f(it1.x, it1.y, it1.z);
 			//cout << it1.x << " " << it1.y << " " << it1.z << endl;
 		}
-		if (i > limit) {
-			break;
-		}
+		//if (i > limit) {
+		//	break;
+		//}
 	}
 	glEnd();
 	glPopMatrix();
@@ -151,7 +151,7 @@ void redraw()
 
 	gluLookAt(eye[0], eye[1], eye[2],
 		center[0], center[1], center[2],
-		0, 1, 0);				// ³¡¾°£¨0£¬0£¬0£©µÄÊÓµãÖÐÐÄ (0,5,50)£¬YÖáÏòÉÏ
+		0, 1, 0);				// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½0ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ (0,5,50)ï¿½ï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 	if (bWire) {
 		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
